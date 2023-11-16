@@ -229,3 +229,22 @@ li{
     align-items: center;
 
 }
+
+/* ************************************************************************************************************** */
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    
+
+    height: 400px ;
+    width: 100%;
+}
+/* ************************************************************************************************************** */
+.port-header{
+    height: 50px;
+    display: flex;
+    justify-content: left;
+}
+.port-content{
+    align-self: center;
+}
