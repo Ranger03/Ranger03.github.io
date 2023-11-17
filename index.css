@@ -22,7 +22,7 @@ nav li{
    border-radius: 5%;
 }
 
-a,button{
+a{
     /* Nav text color and button  */
     color: #2e2d2d;
     font-size: 16px;
@@ -31,14 +31,7 @@ a,button{
     cursor: pointer;
 
 }
-button{
-    color: black;
-    background: rgba(0,0,0,0.2);
-    border: 2px solid #ecf2f8;
-    border-radius: 50px;
-    padding: 9px 25px;
 
-}
 nav li a:hover{
     background-color: #7b7c7e;
     border-radius: 50px;
