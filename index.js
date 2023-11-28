@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add a click event listener to the button
   downloadBtn.addEventListener('click', function() {
     // Location of the PDF file
-    var pdfUrl = 'myResume.pdf';
+    var pdfUrl = 'myResume (2).pdf';
     
     // Trigger the download
     window.open(pdfUrl, '_blank');
