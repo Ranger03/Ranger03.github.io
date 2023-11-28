@@ -184,6 +184,8 @@ img{
 
 /* ************************************************************************************************************** */
 .previous-experience{
+    margin-right: 15px ;
+    margin-top: 15px;
     background-color: bisque;
 
 }
@@ -257,6 +259,8 @@ li{
 .portfolio{
     display: flex;
     flex-direction: column;
+    margin-right: 15px ;
+    margin-top: 15px;
     
 
     height: 400px ;
