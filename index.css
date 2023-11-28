@@ -49,6 +49,15 @@ nav li a:hover{
     transition: all 0.4s ease 0s;
     
 }
+button{
+    color: black;
+    background: rgba(0,0,0,0.2);
+    border: 2px solid #ecf2f8;
+    border-radius: 50px;
+    padding: 9px 25px;
+
+}
+
 /* button:hover{
     background-color: #dbddf5;
     transition: all 0.4s ease 0s;
