@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add a click event listener to the button
   downloadBtn.addEventListener('click', function() {
     // Location of the PDF file
-    var pdfUrl = 'ymyResume.pdg';
+    var pdfUrl = 'classified_ (2).jpeg';
     
     // Trigger the download
     window.open(pdfUrl, '_blank');
