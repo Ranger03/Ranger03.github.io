@@ -1,0 +1,134 @@
+.container{
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12,1fr); /*repeat(3,1fr))*/
+    grid-template-rows: 50px 3000px  ; 
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "c c c c c c c c c c c c";
+    
+}
+
+
+
+.header{
+    
+    grid-area: h;
+    background-color: rgb(21, 226, 226);
+}
+
+.content{
+    grid-area: c;
+    background-color: rgb(237, 237, 237); 
+    display: grid;
+    grid-template-columns: repeat(12,1fr); /*repeat(3,1fr))*/
+    grid-template-rows:  900px 500px 300px 300px 300px 300px 300px ; 
+    grid-template-areas:
+        "w w w w w w pic pic pic pic pic pic"
+        "a a a a a a a a a a a a"
+        "s s s s s s s s s s s s"
+        "i i i i i i i i i i i i"
+        "e e e e e e e e e e e e"
+        "p p p p p p p p p p p p"
+        "m m m m m m n n n n n n";
+  
+}
+.footer{
+    grid-area: f;
+    background-color: pink;
+}
+
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Adjust the number of columns as needed */
+    background-color: #ffffff;
+    color: #251c1c;
+    padding: 10px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #140f0f;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+  }
+  nav a:hover {
+    background-color: #bacadc;
+    border-radius: 50px;
+  }
+  
+  button{
+    color: black;
+    background: rgba(182, 157, 157, 0.2);
+    border: 2px solid #ecf2f8;
+    border-radius: 50px;
+    padding: 9px 25px;
+
+} 
+button:hover{
+    background-color: #dbddf5;
+    transition: all 0.4s ease 0s;
+} 
+
+/* Container of Content */
+
+.welcome{
+    grid-area: w;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.picture{
+    grid-area: pic;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.About{
+    grid-area: a;
+    background-color: rgb(255, 255, 255);
+    
+}
+.skills{
+    grid-area: s;
+    
+}
+.interests{
+    grid-area: i;
+    
+}
+.experience{
+    grid-area: e;
+    
+}
+.portfolio{
+    grid-area: p;
+    
+}
+.contact{
+    grid-area: n;
+    
+}
+.contact-message{
+    grid-area: m;
+    
+}
+
+/* Container of Content */
+
