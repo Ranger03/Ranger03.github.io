@@ -3,7 +3,7 @@
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(12,1fr); /*repeat(3,1fr))*/
-    grid-template-rows: 50px 3000px  ; 
+    grid-template-rows: 50px auto ; 
     grid-template-areas:
         "h h h h h h h h h h h h"
         "c c c c c c c c c c c c";
@@ -132,3 +132,20 @@ img{
 
 /* Container of Content */
 
+@media only screen and (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr; /* Adjusted the rows for mobile layout */
+    }
+/* 
+    .content {
+        grid-template-areas:
+            "w"
+            "pic"
+            "a"
+            "s"
+            "i"
+            "e"
+            "p"
+            "m";
+    } */
+}
