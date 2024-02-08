@@ -71,6 +71,7 @@ nav {
   button{
     color: black;
     background: rgba(182, 157, 157, 0.2);
+    width: 200px;
     border: 2px solid #ecf2f8;
     border-radius: 50px;
     padding: 9px 25px;
@@ -109,15 +110,18 @@ img{
 
 .About{
     grid-area: a;
+    padding-top: 50px;
     background-color: rgb(255, 255, 255);
     
 }
 .skills{
     grid-area: s;
+    padding-top: 50px;
     
 }
 .interests{
     grid-area: i;
+    padding-top: 50px;
     
 }
 .experience{
