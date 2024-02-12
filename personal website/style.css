@@ -143,20 +143,19 @@ img{
 
 /* Container of Content */
 
-@media only screen and (max-width: 500px) {
-    .container {
-        grid-template-columns: 1fr; /* Adjusted the rows for mobile layout */
-    }
-/* 
+@media (max-width: 800px) {
     .content {
+        grid-template-columns: 1fr; /* Adjusted the rows for mobile layout */
+        grid-template-rows: auto auto auto auto auto auto auto  auto auto;
         grid-template-areas:
-            "w"
-            "pic"
-            "a"
-            "s"
-            "i"
-            "e"
-            "p"
-            "m";
-    } */
+        "w"
+        "pic"
+        "a"
+        "s"
+        "i"
+        "e"
+        "p"
+        "m"
+        "n";
+    }
 }
