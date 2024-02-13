@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let downloadBtn = document.getElementById("downloadBtn");
 
 
-  downloadBtn.addEventListener("click", function () {
-    let pdfUrl = "Mycv.pdf";
+  // downloadBtn.addEventListener("click", function () {
+  //   let pdfUrl = "Mycv.pdf";
 
-    window.open(pdfUrl, "_blank");
-  });
+  //   window.open(pdfUrl, "_blank");
+  // });
 });
 
 $(document).ready(function () {
@@ -30,4 +30,3 @@ $(document).ready(function () {
     lastScrollTop = st;
   });
 });
-

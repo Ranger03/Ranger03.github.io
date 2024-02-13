@@ -15,8 +15,18 @@
 .header{
     
     grid-area: h;
-    background-color: rgb(21, 226, 226);
+    background-color: rgb(255, 255, 255);
 }
+
+/* .side-bar ul{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+} */
 #header-hidden {
     position: fixed;
     top: 0;
@@ -48,12 +58,64 @@
 
 
 nav {
+    height: 40px;
+  
+  }
+nav ul{
+    list-style: none;
     display: grid;
     grid-template-columns: repeat(7, 1fr); /* Adjust the number of columns as needed */
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+    "oh oa os oi oe oc bt";
     background-color: #ffffff;
     color: #251c1c;
     padding: 10px;
-  }
+
+}
+
+nav ul.side-bar{
+    position: fixed;
+    list-style: none;
+    display: none;
+    grid-gap: 30px;
+    grid-template-columns: 1fr; /* Adjust the number of columns as needed */
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+    'oh'
+    'oa'
+    'os' 
+    'oi' 
+    'oe' 
+    'oc' 
+    'bt';
+    background-color: #ffffff;
+    color: #251c1c;
+    padding: 10px;
+
+}
+
+.ofHome{
+    grid-area: oh;
+}
+.ofAbout{
+    grid-area: oa;
+}
+.ofSkills{
+    grid-area: os;
+}
+.ofInterests{
+    grid-area: oi;
+}
+.ofExperience{
+    grid-area: oe;
+}
+.ofContact{
+    grid-area: oc;
+}
+.btn{
+    grid-area: bt;
+}
 
   nav a {
     text-decoration: none;
@@ -81,6 +143,7 @@ button:hover{
     background-color: #dbddf5;
     transition: all 0.4s ease 0s;
 } 
+
 
 /* Container of Content */
 
@@ -140,10 +203,22 @@ img{
     grid-area: m;
     
 }
+.responsiveBtn{
+    display: none;
+}
 
 /* Container of Content */
 
 @media (max-width: 800px) {
+    #header-hidden{
+        display: none;
+    }
+    .sideBtn{
+        position: fixed;
+        display: block;
+        z-index: 9999;
+    }
+
     .content {
         grid-template-columns: 1fr; /* Adjusted the rows for mobile layout */
         grid-template-rows: auto auto auto auto auto auto auto  auto auto;

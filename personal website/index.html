@@ -10,14 +10,43 @@
 
     <div class="container">
         <div class="header" >
+            <!-- <button id="responsiveBtn">Menu</button> -->
             <nav id="header-hidden">
-                <a href="#home-page">Home</a>
-                <a href="#about-page">About</a>
-                <a href="#skills-page">Skills</a>
-                <a href="#interest-page">Interests</a>
-                <a href="#experience-page">Experience</a>
-                <a href="#contact-page">Contact</a>
-                <button id="downloadBtn" class="btn" type="button">Get my resume</button>
+            <ul class="toHide">
+                <li><a href="#home-page" class="ofHome">Home</a></li>
+                <li><a href="#about-page" class="ofAbout">About</a></li>
+                <li><a href="#skills-page" class="ofSkills">Skills</a></li>
+                <li><a href="#interest-page" class="ofInterests">Interests</a></li>
+                <li><a href="#experience-page" class="ofExperience">Experience</a></li>
+                <li><a href="#contact-page" class="ofContact">Contact</a></li>
+                <li><a id="downloadBtn" class="btn" href="https://drive.google.com/file/d/1MCLgWHaayhXa2U-9OymZWTj7e65-0MBQ/view?usp=sharing" target="_blank">Get my resume</a></li>
+            </ul>
+            <!-- <ul class="side-bar">
+                <li><a href="#home-page">Home</a></li>
+                <li><a href="#about-page">About</a></li>
+                <li><a href="#skills-page">Skills</a></li>
+                <li><a href="#interest-page">Interests</a></li>
+                <li><a href="#experience-page">Experience</a></li>
+                <li><a href="#contact-page">Contact</a></li>
+                <li><button id="downloadBtn" class="btn" type="button">Get my resume</button></li>
+            </ul> -->
+            </nav>
+            <nav>
+                <a onclick=showSidebar() href="#" class="sideBtn"><svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                <ul class="side-bar">
+                    <li onClick=hideSidebar()><a href="#home-page">Home</a></li>
+                    <li onClick=hideSidebar()><a href="#about-page">About</a></li>
+                    <li onClick=hideSidebar()><a href="#skills-page">Skills</a></li>
+                    <li onClick=hideSidebar()><a href="#interest-page">Interests</a></li>
+                    <li onClick=hideSidebar()><a href="#experience-page">Experience</a></li>
+                    <li onClick=hideSidebar()><a href="#contact-page">Contact</a></li>
+                    <li onClick=hideSidebar()><a id="downloadBtn" class="btn"  href="https://drive.google.com/file/d/1MCLgWHaayhXa2U-9OymZWTj7e65-0MBQ/view?usp=sharing" target="_blank">Get my resume</a>
+                    
+                </ul>
+
+
+
+
             </nav>
             
         </div>
@@ -107,5 +136,17 @@
     </div>
 
     <script src="index.js"></script>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display = 'grid'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.side-bar')
+            sidebar.style.display = 'none'
+
+        }
+
+    </script>
 </body>
 </html>
