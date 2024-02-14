@@ -139,7 +139,12 @@
     <script>
         function showSidebar(){
             const sidebar = document.querySelector('.side-bar')
-            sidebar.style.display = 'grid'
+            if(sidebar.style.display === 'grid'){
+                sidebar.style.display = 'none'
+            }else{
+                sidebar.style.display = 'grid'
+            }
+            
         }
         function hideSidebar(){
             const sidebar = document.querySelector('.side-bar')
