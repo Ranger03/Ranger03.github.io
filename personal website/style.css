@@ -75,6 +75,7 @@ nav ul{
 }
 
 nav ul.side-bar{
+    margin-top: 75px;
     position: fixed;
     list-style: none;
     display: none;
